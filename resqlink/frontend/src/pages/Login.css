@@ -1,0 +1,144 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f6f3;
+  padding: 40px 20px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 440px;
+  background: #ffffff;
+  border: 1px solid #e1e5e1;
+  border-radius: 24px;
+  padding: 42px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+.auth-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #14201b;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 28px;
+}
+
+.auth-card h1 {
+  margin: 0;
+  color: #14201b;
+  font-size: 36px;
+  line-height: 1.1;
+}
+
+.auth-subtitle {
+  color: #718079;
+  margin: 10px 0 30px;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-card label {
+  color: #26332e;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 7px;
+  margin-top: 16px;
+}
+
+.auth-card input {
+  height: 48px;
+  border: 1px solid #d8ded9;
+  border-radius: 10px;
+  padding: 0 14px;
+  font-size: 15px;
+  outline: none;
+  color: #17221e;
+  background: #fff;
+}
+
+.auth-card input:focus {
+  border-color: #ef5b3f;
+}
+
+.auth-card form button {
+  height: 50px;
+  margin-top: 26px;
+  border: none;
+  border-radius: 10px;
+  background: #ef5b3f;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.auth-card form button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.login-error {
+  margin-top: 12px;
+  color: #c43d3d;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.auth-bottom {
+  text-align: center;
+  color: #718079;
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+.auth-bottom span {
+  color: #ef5b3f;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.back-home {
+  width: 100%;
+  margin-top: 12px;
+  height: 45px;
+  background: transparent;
+  border: none;
+  color: #718079;
+  cursor: pointer;
+}
+
+.admin-login-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid #e1e5e1;
+  color: #718079;
+  font-size: 12px;
+}
+
+.admin-login-option button {
+  border: 0;
+  background: transparent;
+  color: #16855c;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+.admin-login-option button:hover {
+  color: #ef5b3f;
+}

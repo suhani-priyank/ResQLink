@@ -1,0 +1,279 @@
+.ops-page {
+  --bg: #f3f6f5;
+  --card: rgba(255, 255, 255, 0.72);
+  --card-solid: #ffffff;
+  --text: #17201b;
+  --muted: #718078;
+  --border: rgba(210, 218, 213, 0.8);
+  --orange: #e85d3f;
+  --red: #d93434;
+  --green: #3f8064;
+  --blue: #557a8a;
+
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+.ops-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 24px 6%;
+  border-bottom: 1px solid var(--border);
+  background: var(--card-solid);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.ops-header a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  opacity: 0.75;
+}
+
+.ops-header a:hover {
+  opacity: 1;
+}
+
+.ops-header h1 {
+  font-size: 20px;
+  letter-spacing: -0.5px;
+}
+
+.ops-body {
+  padding: 40px 6% 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.ops-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.ops-card {
+  background: var(--card-solid);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.ops-metric {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.ops-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--muted);
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.ops-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.badge-live { background: #e8f6ef; color: #1c7a4f; }
+.badge-local { background: #eef3f9; color: #35617a; }
+.badge-simulation { background: #fdf3e7; color: #a15b1c; }
+.badge-beta { background: #f2ecfb; color: #6d3fb0; }
+.badge-critical { background: #fdeceb; color: #c22e2e; }
+.badge-high { background: #fdf1e8; color: #b45816; }
+.badge-medium { background: #fdf7e6; color: #9c7a10; }
+.badge-low { background: #edf6ee; color: #3f8064; }
+
+.ops-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.ops-table th {
+  text-align: left;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--muted);
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.ops-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.ops-table-wrap {
+  overflow-x: auto;
+  background: var(--card-solid);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+.ops-empty,
+.ops-error {
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--muted);
+  background: var(--card-solid);
+  border: 1px dashed var(--border);
+  border-radius: 16px;
+}
+
+.ops-error {
+  color: var(--red);
+  border-color: rgba(217, 52, 52, 0.35);
+}
+
+.ops-btn {
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: var(--text);
+  color: white;
+}
+
+.ops-btn.secondary {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.ops-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ops-section-title {
+  font-size: 18px;
+  margin-bottom: 16px;
+  letter-spacing: -0.3px;
+}
+
+@media (max-width: 768px) {
+  .ops-header,
+  .ops-body {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+/* =========================================================
+   FINAL AUDIT — responsive helpers for the small inline
+   grids used across the ops pages (Hospitals, Agencies,
+   Analytics, CommandCenter) so they don't cram on tablet
+   and mobile widths.
+   ========================================================= */
+
+.ops-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.ops-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px;
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .ops-two-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================================
+   DARK MODE — mirrors home.css's dark palette so switching
+   pages doesn't feel like a different product.
+   ========================================================= */
+
+.ops-page.dark-mode {
+  --bg: #0d1512;
+  --card: #14201b;
+  --card-solid: #17241f;
+  --text: #f4f7f5;
+  --muted: #8e9b95;
+  --border: rgba(255, 255, 255, 0.12);
+  --orange: #ff6245;
+  --green: #39b982;
+}
+
+.ops-page.dark-mode .badge-live { background: rgba(34, 197, 94, 0.16); color: #4ade80; }
+.ops-page.dark-mode .badge-local { background: rgba(96, 165, 250, 0.16); color: #93c5fd; }
+.ops-page.dark-mode .badge-simulation { background: rgba(245, 158, 11, 0.16); color: #fbbf24; }
+.ops-page.dark-mode .badge-beta { background: rgba(167, 139, 250, 0.16); color: #c4b5fd; }
+.ops-page.dark-mode .badge-critical { background: rgba(239, 68, 68, 0.16); color: #f87171; }
+.ops-page.dark-mode .badge-high { background: rgba(249, 115, 22, 0.16); color: #fb923c; }
+.ops-page.dark-mode .badge-medium { background: rgba(234, 179, 8, 0.16); color: #facc15; }
+.ops-page.dark-mode .badge-low { background: rgba(34, 197, 94, 0.16); color: #4ade80; }
+
+.ops-page.dark-mode .ops-btn {
+  background: var(--text);
+  color: var(--bg);
+}
+
+.ops-page.dark-mode .ops-btn.secondary {
+  background: transparent;
+  color: var(--text);
+}
+
+/* Theme toggle button, matching home.css's .theme-btn look */
+.ops-theme-btn {
+  border: 1px solid var(--border);
+  background: var(--card-solid);
+  color: var(--text);
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ops-warning-card {
+  border-color: rgba(217, 52, 52, 0.4) !important;
+  background: #fdeceb !important;
+  color: #7a1f1f;
+}
+
+.ops-page.dark-mode .ops-warning-card {
+  background: rgba(239, 68, 68, 0.12) !important;
+  border-color: rgba(239, 68, 68, 0.35) !important;
+  color: #fca5a5;
+}
+
+.ops-input {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--card-solid);
+  color: var(--text);
+  font-family: inherit;
+}

@@ -1,0 +1,659 @@
+/* ========================================
+   PAGE
+======================================== */
+
+.rescue-page {
+  min-height: 100vh;
+  background: #f4f7f6;
+  padding: 45px 5%;
+  color: #17221f;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.rescue-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 35px;
+}
+
+.eyebrow {
+  color: #61736d;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.rescue-header h1 {
+  font-size: 48px;
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.rescue-header p {
+  font-size: 20px;
+  color: #65736f;
+  margin-top: 12px;
+}
+
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.refresh-btn {
+  border: 1px solid #d8e0dd;
+  background: white;
+  padding: 15px 24px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.refresh-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ========================================
+   MESSAGE
+======================================== */
+
+.dashboard-message {
+  background: #e8f7ee;
+  border: 1px solid #bce6cc;
+  color: #176b38;
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+
+/* ========================================
+   TEAM CARD
+======================================== */
+
+.team-card {
+  background: white;
+  border: 1px solid #dde5e2;
+  border-radius: 25px;
+  padding: 32px;
+  margin-bottom: 40px;
+  box-shadow: 0 12px 35px rgba(22, 40, 34, 0.05);
+}
+
+.team-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.section-label {
+  color: #ee432f;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.team-card h2 {
+  font-size: 34px;
+  margin: 10px 0;
+}
+
+.team-code {
+  display: inline-block;
+  background: #edf2f0;
+  padding: 9px 14px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 800;
+  color: #45534f;
+}
+
+
+/* ========================================
+   AVAILABILITY
+======================================== */
+
+.availability-badge {
+  padding: 14px 20px;
+  border-radius: 30px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.availability-badge.available {
+  background: #e8f7ed;
+  color: #218542;
+}
+
+.availability-badge.busy {
+  background: #fff0df;
+  color: #c66a16;
+}
+
+
+/* ========================================
+   TEAM STATS
+======================================== */
+
+.team-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.stat-box {
+  background: #f6f9f8;
+  border-radius: 18px;
+  padding: 25px;
+  min-height: 110px;
+}
+
+.stat-icon {
+  display: block;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.stat-box strong {
+  display: block;
+  font-size: 21px;
+  margin-bottom: 6px;
+}
+
+.stat-box small {
+  color: #78837f;
+  font-size: 14px;
+}
+
+
+/* ========================================
+   TEAM DETAILS
+======================================== */
+
+.team-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 30px;
+  padding-top: 25px;
+  border-top: 1px solid #e1e7e4;
+}
+
+.team-details h3 {
+  margin-top: 0;
+  font-size: 21px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag,
+.equipment-tag {
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.skill-tag {
+  background: #eee8ff;
+  color: #633dd0;
+}
+
+.equipment-tag {
+  background: #e1f5fa;
+  color: #087c9c;
+}
+
+.empty-text {
+  color: #89938f;
+}
+
+
+/* ========================================
+   SOS SECTION
+======================================== */
+
+.sos-section {
+  margin-top: 30px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.section-heading h2 {
+  font-size: 32px;
+  margin: 8px 0;
+}
+
+.section-heading p {
+  color: #71807b;
+  margin: 0;
+}
+
+.sos-count {
+  background: #ffe8e5;
+  color: #d73828;
+  padding: 15px 22px;
+  border-radius: 15px;
+  font-size: 28px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.sos-count span {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+
+/* ========================================
+   SOS GRID
+======================================== */
+
+.sos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+
+/* ========================================
+   SOS CARD
+======================================== */
+
+.sos-card {
+  background: white;
+  border: 1px solid #dfe6e3;
+  border-radius: 22px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+}
+
+.sos-card.critical {
+  border-left: 6px solid #df3328;
+}
+
+.sos-card.high {
+  border-left: 6px solid #ee8b20;
+}
+
+.sos-card.medium {
+  border-left: 6px solid #e5b928;
+}
+
+.sos-card.low {
+  border-left: 6px solid #3da45b;
+}
+
+.sos-card.completed {
+  opacity: 0.7;
+}
+
+
+/* ========================================
+   SOS TOP
+======================================== */
+
+.sos-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.sos-id {
+  color: #899590;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.sos-top h3 {
+  font-size: 25px;
+  margin: 8px 0 0;
+}
+
+.severity-badge {
+  padding: 8px 13px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.severity-badge.critical {
+  background: #ffe3e1;
+  color: #c92920;
+}
+
+.severity-badge.high {
+  background: #fff0dd;
+  color: #bd6812;
+}
+
+.severity-badge.medium {
+  background: #fff8d8;
+  color: #8c7200;
+}
+
+.severity-badge.low {
+  background: #e3f5e7;
+  color: #28733a;
+}
+
+
+/* ========================================
+   PRIORITY
+======================================== */
+
+.priority-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 25px 0;
+}
+
+.priority-row div {
+  background: #f6f8f7;
+  padding: 14px;
+  border-radius: 12px;
+}
+
+.priority-row span {
+  display: block;
+  color: #7a8782;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.priority-row strong {
+  font-size: 20px;
+}
+
+
+/* ========================================
+   DESCRIPTION
+======================================== */
+
+.sos-description {
+  background: #f8faf9;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.sos-description strong {
+  font-size: 13px;
+}
+
+.sos-description p {
+  margin: 7px 0 0;
+  color: #5e6c67;
+  line-height: 1.5;
+}
+
+
+/* ========================================
+   SOS INFO
+======================================== */
+
+.sos-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #53615c;
+  font-size: 14px;
+}
+
+.sos-info div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+
+/* ========================================
+   VULNERABLE PEOPLE
+======================================== */
+
+.vulnerable {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid #e5e9e7;
+}
+
+.vulnerable strong {
+  font-size: 13px;
+}
+
+.vulnerable div {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.vulnerable span {
+  background: #f1f4f3;
+  padding: 7px 11px;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+
+/* ========================================
+   STATUS
+======================================== */
+
+.status-section {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid #e5e9e7;
+}
+
+.status-section span {
+  display: block;
+  color: #78847f;
+  font-size: 12px;
+  margin-bottom: 7px;
+}
+
+.status-section strong {
+  font-size: 16px;
+}
+
+
+/* ========================================
+   ACTION BUTTON
+======================================== */
+
+.action-btn {
+  width: 100%;
+  border: none;
+  background: #17221f;
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.action-btn:hover {
+  background: #30413b;
+  transform: translateY(-1px);
+}
+
+.action-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* ========================================
+   COMPLETED / CANCELLED
+======================================== */
+
+.completed-message {
+  margin-top: 20px;
+  padding: 14px;
+  background: #e7f7eb;
+  color: #24733a;
+  border-radius: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.cancelled-message {
+  margin-top: 20px;
+  padding: 14px;
+  background: #fce8e7;
+  color: #b62e28;
+  border-radius: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+/* ========================================
+   EMPTY
+======================================== */
+
+.empty-card {
+  background: white;
+  border: 1px solid #dfe6e3;
+  border-radius: 22px;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.empty-icon {
+  font-size: 50px;
+}
+
+.empty-card h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.empty-card p {
+  color: #78847f;
+}
+
+
+/* ========================================
+   LOADING
+======================================== */
+
+.loading-box {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.loading-box h2 {
+  margin-bottom: 5px;
+}
+
+.loading-box p {
+  color: #75827e;
+}
+
+.loader {
+  width: 45px;
+  height: 45px;
+  border: 4px solid #dce5e1;
+  border-top-color: #17221f;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 1000px) {
+
+  .team-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sos-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .rescue-page {
+    padding: 25px 18px;
+  }
+
+  .rescue-header {
+    flex-direction: column;
+  }
+
+  .rescue-header h1 {
+    font-size: 36px;
+  }
+
+  .team-card-header {
+    flex-direction: column;
+  }
+
+  .team-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .team-details {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .priority-row {
+    grid-template-columns: 1fr;
+  }
+
+}
